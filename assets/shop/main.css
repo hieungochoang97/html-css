@@ -1,8 +1,10 @@
-#first-heading {
-    color: red;
+/* Áp dụng cho nhiều phần tử có thuộc tính giống nhau */
+:root {
+    --text-color: rgb(143, 212, 143); /* Global */
 }
 
-.second-heading {
-    color: blue;
-    font-size: 18px;
+
+h1 {
+    --my-color: red; /* local */
+    color: var(--my-color);
 }
