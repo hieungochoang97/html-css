@@ -1,21 +1,19 @@
-
-/* rgb() */
-.box1 {
-    width: 100px;
-    height: 100px;
-    background: rgb(red, green, blue);
+:root {
+    --text-color: red;
 }
 
-/* calc() - tính toán */ 
-
-.box2 {
-    width: calc(80% + 20px);
-    height: 100px;
-    background-color: red;
+h1:hover {
+    color: var(--text-color);
 }
 
-/* attr() */
+h1:active {
+    color: blue;
+}
 
-a::after {
-    content: " (" attr(href)") ";
+li:first-child {
+    color: violet;
+}
+
+li:last-child {
+    color: yellowgreen;
 }
