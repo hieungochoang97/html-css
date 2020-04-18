@@ -1,10 +1,10 @@
-/* Áp dụng cho nhiều phần tử có thuộc tính giống nhau */
-:root {
-    --text-color: rgb(143, 212, 143); /* Global */
-}
+/* 
+- mặc định: font-size: 16px;
 
+=> % - lấy theo thỉ lệ thành phần bao, thường dùng để chia layout.
+=> rem - Phụ thuộc kích thước vào thẻ html (thường sử dụng để dễ dàng reponsive)
+=> em - Phụ thuộc kích thước vào thẻ gần nhất chứa nó.
+=> vw - viewport width - phụ thuộc vào kích thước ngang trình duyệt.
+=> vh - viewport height - phụ thuộc vào kích thước dọc trình duyệt.
 
-h1 {
-    --my-color: red; /* local */
-    color: var(--my-color);
-}
+*/
