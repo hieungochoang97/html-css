@@ -1,39 +1,48 @@
+
+/* position: relative 
+ - có vị trí tương đối, không bị phụ thuộc vào đối tượng khác.
+ - thay đổi vị trí: top, left, right, bottom
+ - top, left, right, bottom chỉ hoạt động khi có position.
+*/
+h1 {
+    position: relative;
+    top: 100px;
+    left: 200px;
+    margin-top: 100px;
+}
+
+/* position: absolute 
+- Có vị trí tuyệt đối, phụ thuộc vào thẻ cha có position
+- thay đổi vị trí: top, left, right, bottom
+*/
 .box {
     width: 100%;
-    height: 100px;
+    height: 200px;
     background-color: red;
+    position: relative;
 }
 
-/* Luôn đứng đầu content*/
-.box::before {
-    content: "";
-    display: block;
-    width: 50px;
-    height: 30px;
+.box-child {
+    width: 20%;
+    height: 20%;
     background-color: white;
-}
-/* Luôn đứng cuối content*/
-.box::after {
-    content: "";
-    display: block;
-    width: 50px;
-    height: 30px;
-    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
-
-/* chọn ký tự đầu tiên */
-h1::first-letter {
-    font-size: 50px;
+/* position: fixed 
+- di chuyển theo màn hình trình duyệt
+- cố định các đầu bằng top, left, right, bottom :0px
+*/
+body {
+    height: 1000px;
 }
 
-/* dòng đầu tiên */
-h1::first-line {
-    color: red;
-}
-
-/* khi bôi chuột vào phần tử được chọn */
-
-h1::selection {
-    color: violet;
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    position: fixed;
+    top: 0;
 }
