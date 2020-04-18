@@ -1,5 +1,8 @@
-/* External */
+#first-heading {
+    color: red;
+}
 
-/* h1 {
+.second-heading {
     color: blue;
-} */
+    font-size: 18px;
+}
