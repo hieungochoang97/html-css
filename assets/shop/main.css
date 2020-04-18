@@ -1,10 +1,27 @@
-/* 
-- mặc định: font-size: 16px;
+.box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-=> % - lấy theo thỉ lệ thành phần bao, thường dùng để chia layout.
-=> rem - Phụ thuộc kích thước vào thẻ html (thường sử dụng để dễ dàng reponsive)
-=> em - Phụ thuộc kích thước vào thẻ gần nhất chứa nó.
-=> vw - viewport width - phụ thuộc vào kích thước ngang trình duyệt.
-=> vh - viewport height - phụ thuộc vào kích thước dọc trình duyệt.
+.box1 {
+    background-color: red;
+}
 
+.box2 {
+    background-color: blue;
+}
+
+.box3 {
+    background-color: yellow;
+    padding: 12px 12px;
+}
+
+/*
+padding: 10px - 4 phía
+padding: 10px 15px - trên, dưới 10px - trái, phái 15px
+padding: trên phải dưới trái;
 */
+
