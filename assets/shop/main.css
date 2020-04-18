@@ -16,12 +16,11 @@
 
 .box3 {
     background-color: yellow;
-    padding: 12px 12px;
+    /* border-width: 10px; 
+    border-style: solid; 
+    border-color: violet; */
+
+    border: 10px solid violet;
 }
 
-/*
-padding: 10px - 4 phía
-padding: 10px 15px - trên, dưới 10px - trái, phái 15px
-padding: trên phải dưới trái;
-*/
 
