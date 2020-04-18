@@ -1,19 +1,33 @@
-.box {
-    width: 100px;
-    height: 100px;
-    padding: 16px;
-    box-sizing: border-box;
+html, body {
+    margin: 0;
 }
 
-.box1 {
-    background-color: red;
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 10px dashed black;
+    margin-bottom: 50px;
 }
+
+.border-box {
+    background-clip: border-box;
+}
+
+.padding-box {
+    background-clip: padding-box;
+}
+
+.content-box {
+    background-clip: content-box;
+}
+
 
 /* 
-Box-sizing: border-box => thường sử dụng trong base css, tự động tính toán kích thước element.
-- unset: về trạng thái ban đầu.
+background-clip:
+-border box : mặc định
+-padding box: đổ từ padding vào
+-content box: đổ từ content vào
 */
-
-
-
-
