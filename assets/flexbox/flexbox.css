@@ -80,3 +80,32 @@ ul {
 .main-col {
     flex: 3;  /* main-col = 3 lần sidebar */
 }
+
+/* Feature Layout */
+
+.feature-layout {
+    margin: 50px 0px;
+    display: flex;
+    /* justify-content: space-between; Không có khoảng trống rìa ngoài */
+    /* justify-content: space-around; Có khoảng trống rìa ngoài */
+    justify-content: space-evenly; /* Có khoảng trống bằng nhau */
+}
+
+.feature-item {
+    padding: 12px 16px;
+    margin-top: 16px;
+    flex-basis: 30%; /* set main-size */
+}
+
+.feature-item:nth-child(1) {
+    background-color: yellow;
+}
+
+.feature-item:nth-child(2) {
+    background-color: blue;
+}
+
+.feature-item:nth-child(3) {
+    background-color: violet;
+}
+
