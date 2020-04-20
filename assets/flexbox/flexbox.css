@@ -109,3 +109,16 @@ ul {
     background-color: violet;
 }
 
+/* Wrap-layout  */
+.wrap-layout {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Nhảy xuống hàng khi bị thu hẹp chiều rộng */
+    /* flex-wrap: wrap-reverse; Lên hàng */
+}
+
+.wrap-layout__item {
+    padding: 50px 100px;
+    margin: 20px;
+    background-color: red;
+}
